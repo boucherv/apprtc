@@ -44,6 +44,7 @@ def get_hd_default(user_agent):
 def make_pc_config(ice_transports):
   config = {
   'iceServers': [],
+  'iceTransportPolicy': 'relay',
   'bundlePolicy': 'max-bundle',
   'rtcpMuxPolicy': 'require'
   };
